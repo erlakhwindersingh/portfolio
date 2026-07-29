@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Er. Lakhwinder Singh - Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Er. Lakhwinder Singh | Senior Software Engineer | Android & Flutter Developer">
+    <meta name="description" content="Senior Software Engineer specializing in Android Native, Flutter, Kotlin, Java, Dart, Firebase, REST APIs, Payment Gateway Integration, Clean Architecture, and Mobile Application Development.">
+    <meta name="keywords" content="Android Native, Flutter, Kotlin, Java, Dart, Firebase, REST APIs, Payment Gateway Integration, Clean Architecture, Mobile Application Development, Senior Software Engineer">
+    <meta name="author" content="Er. Lakhwinder Singh">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://erlakhwindersingh.github.io/">
+
+    <!-- Open Graph / Social Media Preview (Facebook, LinkedIn, WhatsApp, Telegram) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://erlakhwindersingh.github.io/">
+    <meta property="og:title" content="Er. Lakhwinder Singh | Senior Software Engineer | Android & Flutter Developer">
+    <meta property="og:description" content="Senior Software Engineer specializing in Android Native, Flutter, Kotlin, Java, Dart, Firebase, REST APIs, Payment Gateway Integration, Clean Architecture, and Mobile Application Development.">
+    
+    <!-- UPDATED: Pointing to the new image name lakhwindersingh.jpeg -->
+    <meta property="og:image" content="https://erlakhwindersingh.github.io/lakhwindersingh.jpeg">
+    <meta property="og:image:secure_url" content="https://erlakhwindersingh.github.io/lakhwindersingh.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="Er. Lakhwinder Singh Profile Photo">
+
+    <!-- Twitter Card Tags (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://erlakhwindersingh.github.io/">
+    <meta name="twitter:title" content="Er. Lakhwinder Singh | Senior Software Engineer | Android & Flutter Developer">
+    <meta name="twitter:description" content="Senior Software Engineer specializing in Android Native, Flutter, Kotlin, Java, Dart, Firebase, REST APIs, Payment Gateway Integration, Clean Architecture, and Mobile Application Development.">
+    <meta name="twitter:image" content="https://erlakhwindersingh.github.io/lakhwindersingh.jpeg">
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" href="https://erlakhwindersingh.github.io/lakhwindersingh.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="https://erlakhwindersingh.github.io/lakhwindersingh.jpeg">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#00f6ff">
+
+    <!-- JSON-LD Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Er. Lakhwinder Singh",
+      "jobTitle": "Senior Software Engineer",
+      "url": "https://erlakhwindersingh.github.io/",
+      "image": "https://erlakhwindersingh.github.io/lakhwindersingh.jpeg",
+      "sameAs": [
+        "https://www.linkedin.com/in/erlakhwindersingh/"
+      ]
+    }
+    </script>
+
+    <style>
+        /* ==========================================
+           CUSTOM FONTS: Loading external font files
+           ========================================== */
+        @font-face {
+            font-family: 'Poppins-Regular';
+            src: url('Poppins-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Poppins-SemiBold';
+            src: url('Poppins-SemiBold.ttf') format('truetype');
+        }
+
+        /* Animation: Makes the hexagon image shake smoothly */
+        @keyframes slowShake {
+            0% { transform: rotate(0deg); }
+            20% { transform: rotate(1deg); }
+            40% { transform: rotate(-1deg); }
+            60% { transform: rotate(1deg); }
+            80% { transform: rotate(-1deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        /* Animations: Moving glowing orbs in the background */
+        @keyframes floatOrb1 {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(40vw, 30vh) scale(1.3); }
+            100% { transform: translate(10vw, 60vh) scale(0.9); }
+        }
+
+        @keyframes floatOrb2 {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-40vw, -30vh) scale(1.2); }
+            100% { transform: translate(-10vw, -70vh) scale(1.4); }
+        }
+
+        /* Animation: Smooth color shifting for background */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* General Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* TEXT SELECTION COLOR */
+        ::selection {
+            background-color: #00f6ff; 
+            color: #1a1d24; 
+        }
+        ::-moz-selection {
+            background-color: #00f6ff;
+            color: #1a1d24;
+        }
+
+        h1, h2, h3, h4, h5, h6, .logo {
+            font-family: 'Poppins-SemiBold', sans-serif;
+        }
+
+        body {
+            font-family: 'Poppins-Regular', sans-serif;
+            background-color: #080c13; 
+            background: linear-gradient(
+                -45deg, 
+                #080c13 0%, 
+                #0f3b4d 25%, 
+                #080c13 50%, 
+                #144a66 75%, 
+                #080c13 100%
+            );
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            z-index: 0;
+        }
+
+        /* BRIGHT BACKGROUND ORBS */
+        body::before, body::after {
+            content: '';
+            position: fixed;
+            width: 650px;
+            height: 650px;
+            border-radius: 50%;
+            filter: blur(140px); 
+            z-index: -1;
+            pointer-events: none; 
+            opacity: 0.45; 
+        }
+
+        body::before {
+            background: #00f6ff; 
+            top: -10%;
+            left: -10%;
+            animation: floatOrb1 20s infinite alternate ease-in-out;
+        }
+
+        body::after {
+            background: #00aaff; 
+            bottom: -10%;
+            right: -10%;
+            animation: floatOrb2 25s infinite alternate-reverse ease-in-out;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background: rgba(10, 15, 25, 0.65); 
+            backdrop-filter: blur(25px) saturate(120%); 
+            -webkit-backdrop-filter: blur(25px) saturate(120%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px 10%; 
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; 
+        }
+        
+        nav .logo {
+            font-size: 1.8em; font-weight: 800; font-family: 'Poppins-SemiBold', sans-serif;
+            color: #ffffff; cursor: pointer; user-select: none;
+            padding: 2px 12px; border: 2px solid #00f6ff; border-radius: 8px; 
+            background: rgba(0, 246, 255, 0.05); transition: all 0.3s ease; display: inline-block; letter-spacing: 1px;
+        }
+        nav .logo span { color: #00f6ff; transition: all 0.3s ease; }
+        nav .logo:hover { background: #00f6ff; color: #080c13; box-shadow: 0 0 15px rgba(0, 246, 255, 0.5); transform: translateY(-2px); }
+        nav .logo:hover span { color: #080c13; }
+        
+        nav ul { list-style: none; display: flex; gap: 15px; } 
+        
+        nav ul li a { 
+            color: #e2e8f0; 
+            text-decoration: none; 
+            font-weight: 500; 
+            font-size: 1em; 
+            transition: all 0.3s ease; 
+            padding: 8px 20px; 
+            border-radius: 30px; 
+        }
+        
+        nav ul li a:hover, nav ul li a.active { 
+            background: #00f6ff; 
+            color: #ffffff; 
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
+            box-shadow: 0 4px 15px rgba(0, 246, 255, 0.3); 
+        }
+
+        /* Hero Section */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 10% 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .hero-content h3 { font-size: 1.5em; font-weight: 500; margin-bottom: 5px; text-shadow: 0 4px 15px rgba(0,0,0,0.8); }
+        .hero-content h1 { font-size: 3.5em; font-weight: 800; margin-bottom: 5px; line-height: 1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.9); }
+        .hero-content h2 { font-size: 1.8em; font-weight: 600; margin-bottom: 20px; text-shadow: 0 4px 15px rgba(0,0,0,0.8); }
+        .hero-content h2 span { color: #00f6ff; }
+        
+        .hero-text-box {
+            background: rgba(10, 15, 25, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .hero-text-box p { color: #cbd5e1; font-size: 1.1em; line-height: 1.7; margin-bottom: 15px; text-shadow: 0 2px 5px rgba(0,0,0,0.8); }
+        .hero-text-box p:last-child { margin-bottom: 0; }
+
+        /* Buttons */
+        .header-buttons { display: flex; flex-wrap: wrap; gap: 15px; position: relative; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+        
+        .btn-primary { 
+            background: #00f6ff; color: #1a1d24; 
+            box-shadow: 0 0 20px rgba(0, 246, 255, 0.5); 
+        }
+        .btn-primary:hover { box-shadow: 0 0 35px rgba(0, 246, 255, 0.8); transform: translateY(-3px); }
+        
+        .btn-outline { 
+            background: rgba(10, 15, 25, 0.6);
+            backdrop-filter: blur(15px);
+            border: 2px solid #00f6ff; 
+            color: #00f6ff; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .btn-outline:hover { background: rgba(0, 246, 255, 0.15); transform: translateY(-3px); box-shadow: 0 0 20px rgba(0, 246, 255, 0.4); }
+
+        .btn-linkedin {
+            background: rgba(10, 15, 25, 0.6);
+            backdrop-filter: blur(15px);
+            border: 2px solid #0077b5;
+            color: #0077b5;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-linkedin:hover {
+            background: rgba(0, 119, 181, 0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(0, 119, 181, 0.4);
+        }
+
+        .contact-icon {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+
+        /* Hero Image */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+
+        .hex-wrapper {
+            position: relative;
+            width: 380px; height: 430px;
+            display: flex; justify-content: center; align-items: center;
+            animation: slowShake 2.5s ease-in-out infinite;
+        }
+        
+        .hex-glow {
+            position: absolute;
+            width: 100%; height: 100%;
+            background: #00f6ff;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            filter: blur(25px);
+            z-index: 1;
+        }
+
+        .hex-border {
+            position: absolute;
+            width: 98%; height: 98%;
+            background: #00f6ff;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            z-index: 2;
+        }
+
+        .hex-img {
+            position: relative;
+            width: 93%; height: 93%;
+            object-fit: cover;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            z-index: 3;
+            background-color: #1a1d24; 
+        }
+
+        /* Generic Section Styling */
+        section:not(#home) { padding: 100px 5% 60px; max-width: 1200px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.05); }
+        .section-title { text-align: center; font-size: 2.4em; margin-bottom: 50px; font-weight: 700; text-shadow: 0 4px 10px rgba(0,0,0,0.8); }
+        .section-title span { color: #00f6ff; }
+
+        /* Experience Timeline */
+        .glass-card {
+            background: linear-gradient(135deg, rgba(10, 15, 25, 0.6) 0%, rgba(10, 15, 25, 0.3) 100%);
+            backdrop-filter: blur(25px); 
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.15); 
+            border-left: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6); 
+            padding: 40px 30px;
+        }
+
+        .timeline-container { margin-top: 20px; }
+        .timeline-item { display: flex; gap: 25px; margin-bottom: 35px; padding-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .timeline-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        
+        .company-logo { 
+            width: 60px; height: 60px; 
+            background: rgba(10, 15, 25, 0.8); 
+            border-radius: 12px; 
+            display: flex; align-items: center; justify-content: center; 
+            font-size: 1.2em; font-weight: 800; color: #00f6ff;
+            flex-shrink: 0; 
+            border: 1px solid rgba(0, 246, 255, 0.3);
+            text-align: center; line-height: 1.2; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .exp-details h3 { font-size: 1.4em; margin: 0 0 5px; color: #00f6ff; }
+        .exp-details h4 { font-size: 1.05em; color: #f8fafc; margin: 0 0 5px; }
+        .exp-details .meta { font-size: 0.9em; color: #94a3b8; margin-bottom: 15px; display: inline-block; background: rgba(0,0,0,0.6); padding: 4px 10px; border-radius: 20px; }
+        
+        .inner-role { margin-left: 15px; border-left: 2px solid rgba(0, 246, 255, 0.5); padding-left: 20px; margin-bottom: 20px; position: relative; }
+        .inner-role::before { content: ''; position: absolute; left: -6px; top: 5px; width: 10px; height: 10px; background: #00f6ff; border-radius: 50%; box-shadow: 0 0 10px #00f6ff; }
+        .inner-role h5 { font-size: 1.1em; color: #f8fafc; }
+        .inner-role span { font-size: 0.85em; color: #94a3b8; font-style: italic; }
+        .inner-role p { font-size: 0.95em; color: #cbd5e1; margin-top: 8px; }
+
+        /* Skills Grid */
+        .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .skill-tag { 
+            background: rgba(10, 15, 25, 0.6);
+            backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            border-top: 1px solid rgba(255, 255, 255, 0.15); 
+            padding: 10px 22px; 
+            border-radius: 30px; 
+            font-size: 0.95em; 
+            transition: 0.3s; 
+            color: #ffffff; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        .skill-tag:hover { border-color: #00f6ff; background: rgba(0, 246, 255, 0.15); transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0, 246, 255, 0.3); }
+
+        /* ==========================================
+           NEW: LIVE PROJECTS SECTION UI (Fixed)
+           ========================================== */
+        .live-section-title span { color: #00ff88; text-shadow: 0 0 15px rgba(0, 255, 136, 0.5); }
+        .live-projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch; /* Cards barabar height ke rahenge */
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .live-card {
+            position: relative;
+            width: 100%;
+            max-width: 400px; /* Thodi chaurayi badha di taaki text fit aaye */
+            background: #111827;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* Animated Glowing Border Effect */
+        .live-card::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: conic-gradient(transparent, transparent, transparent, #00f6ff, #00ff88);
+            animation: rotateGradient 4s linear infinite;
+            z-index: -2;
+        }
+
+        .live-card::after {
+            content: '';
+            position: absolute;
+            inset: 3px;
+            background: linear-gradient(135deg, #0d131f 0%, #151e32 100%);
+            border-radius: 17px;
+            z-index: -1;
+        }
+
+        .live-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.25);
+        }
+
+        @keyframes rotateGradient {
+            0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        /* Live Pulsing Badge */
+        .live-badge {
+            position: absolute;
+            top: 20px; right: 20px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.4);
+            color: #00ff88;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+            letter-spacing: 1px;
+            z-index: 5;
+        }
+
+        .pulse-dot {
+            width: 8px; height: 8px;
+            background: #00ff88;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00ff88;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(0, 255, 136, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+        }
+
+        .live-content { 
+            padding: 70px 30px 40px 30px; /* Top padding 70px di hai taaki LIVE badge clear rahe */
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; /* Content pure card mein stretch hoga */
+            align-items: center;
+        }
+
+        .live-content h3 { font-size: 1.6em; color: #fff; margin-bottom: 12px; }
+        
+        .live-content p { 
+            color: #cbd5e1; 
+            font-size: 0.95em; 
+            margin-bottom: 25px; 
+            line-height: 1.7; 
+            flex-grow: 1; /* Text expand hoke button ko bottom mein push karega */
+        }
+        
+        .live-btn {
+            background: linear-gradient(90deg, #00f6ff, #00ff88);
+            color: #080c13;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+            margin-top: auto; /* Button humesha card ke ekdum niche rahega */
+        }
+        .live-btn:hover {
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.6);
+            transform: scale(1.05);
+        }
+
+
+        /* Projects Grid (Featured) */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .project-card { 
+            padding: 30px; transition: 0.4s; position: relative; overflow: hidden; 
+            background: linear-gradient(135deg, rgba(10, 15, 25, 0.6) 0%, rgba(10, 15, 25, 0.3) 100%);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            border-left: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .project-card:hover { 
+            border-color: rgba(0, 246, 255, 0.5); 
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 40px rgba(0, 246, 255, 0.2); 
+            background: linear-gradient(135deg, rgba(15, 25, 40, 0.7) 0%, rgba(10, 15, 25, 0.4) 100%); 
+        }
+        .project-card h3 { font-size: 1.3em; margin: 0 0 12px; color: #fff; }
+        .project-card p { font-size: 0.95em; color: #cbd5e1; margin-bottom: 20px; line-height: 1.6; }
+        
+        .tech-stack { 
+            font-size: 0.85em; 
+            color: #00f6ff; 
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            display: inline-block; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.5); 
+        }
+
+        /* Contact Dropdown Styles */
+        .contact-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 15px;
+            background: rgba(10, 15, 25, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 246, 255, 0.4);
+            border-radius: 12px;
+            padding: 25px;
+            width: 320px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+            z-index: 10;
+        }
+
+        .contact-dropdown-menu h4 { color: #00f6ff; margin-bottom: 20px; font-size: 1.2em; text-align: center; }
+        
+        .contact-form button { width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+        .contact-form button.submit-btn { background: #00f6ff; color: #1a1d24; border: none; }
+        .contact-form button.submit-btn:hover { box-shadow: 0 0 15px rgba(0, 246, 255, 0.5); transform: translateY(-2px); }
+        .contact-form button.back-btn { background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #cbd5e1; }
+        .contact-form button.back-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px; outline: none; font-family: inherit; transition: border-color 0.3s; }
+        .contact-form input:focus, .contact-form textarea:focus { border-color: #00f6ff; background: rgba(0,0,0,0.8); }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            #home { flex-direction: column-reverse; text-align: center; padding-top: 160px; justify-content: center; gap: 50px; }
+            .hero-image { justify-content: center; padding-right: 0; width: 100%; }
+            .hex-wrapper { width: 300px; height: 340px; }
+            body::before, body::after { width: 400px; height: 400px; filter: blur(90px); }
+            nav { flex-direction: column; padding: 15px; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; }
+            .header-buttons { justify-content: center; }
+        }
+
+        @media (max-width: 600px) {
+            .hero-content h1 { font-size: 2.4em; }
+            .hero-content h2 { font-size: 1.4em; }
+            .hero-content h3 { font-size: 1.2em; }
+            .hero-text-box p { font-size: 1em; }
+            .section-title { font-size: 2em; margin-bottom: 30px; }
+            section:not(#home) { padding: 80px 5% 40px; }
+            #home { padding-top: 180px; padding-bottom: 40px; }
+            nav { padding: 15px 5%; }
+            nav .logo { font-size: 1.4em; }
+            nav ul { gap: 8px; }
+            nav ul li a { padding: 6px 12px; font-size: 0.9em; }
+            .hex-wrapper { width: 230px; height: 260px; }
+            .glass-card { padding: 25px 15px; }
+            .timeline-item { flex-direction: column; gap: 15px; align-items: flex-start; }
+            .company-logo { width: 50px; height: 50px; font-size: 1em; }
+            .inner-role { margin-left: 5px; padding-left: 15px; }
+            .exp-details h3 { font-size: 1.2em; }
+            .contact-dropdown-menu { width: 90vw; left: 50%; transform: translateX(-50%); }
+            .btn { width: 100%; max-width: 300px; }
+            .projects-grid { grid-template-columns: 1fr; }
+            
+            /* Responsive Live Cards */
+            .live-card { width: 100%; max-width: 320px; }
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+    <nav>
+       <div class="logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Go to Home">L<span>S</span></div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#live-projects">Live Apps</a></li> <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function toggleResumeForm() {
+            const resumeForm = document.getElementById('resume-dropdown');
+            if (resumeForm.style.display === 'block') {
+                resumeForm.style.display = 'none';
+            } else {
+                resumeForm.style.display = 'block';
+            }
+        }
+
+        function closeResumeForm() {
+            document.getElementById('resume-dropdown').style.display = 'none';
+        }
+
+        function sendResume() {
+            const email = document.getElementById('visitor-email').value;
+            if(email) {
+                const link = document.createElement('a');
+                link.href = 'Lakhwinder_Singh_Resume.pdf';
+                link.download = 'Lakhwinder_Singh_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                alert(`Thanks! Your resume process is complete for ${email}.`);
+                closeResumeForm(); 
+            } else {
+                alert("Please enter your email address first.");
+            }
+        }
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12') { e.preventDefault(); }
+            if (e.ctrlKey && e.shiftKey && e.key === 'I') { e.preventDefault(); }
+            if (e.ctrlKey && e.shiftKey && e.key === 'C') { e.preventDefault(); }
+            if (e.ctrlKey && e.shiftKey && e.key === 'J') { e.preventDefault(); }
+            if (e.ctrlKey && e.key.toLowerCase() === 'u') { e.preventDefault(); }
+        });
+    </script>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Lakhwinder Singh</h1>
+            <h2>And I'm a <span>Sr. Software Engineer</span></h2>
+            
+            <div class="hero-text-box">
+                <p class="highlight-text" style="color: #00f6ff; font-weight: 600;">Team Lead – Mobile Apps | Android & Flutter Development</p>
+                <h4 style="margin-top: 15px; color: #ffffff;">Core Skills</h4>
+                <p>Flutter • Android • Python • OOP • Mobile Architecture • REST API Integration • Firebase • State Management • UI/UX Optimization • Performance Optimization • Clean Architecture</p>
+                <h4 style="margin-top: 15px; color: #ffffff;">Mobile Application Development</h4>
+                <p>Experienced Mobile Application Developer specializing in building high-performance, scalable, and user-centric digital solutions. Skilled in Flutter, Android SDK, and modern mobile architectures with strong expertise in complex API integrations and clean code practices.</p>
+                <h4 style="margin-top: 15px; color: #ffffff;">Python Development</h4>
+                <p>Proficient in Python development with experience in automation, backend logic, API handling, and scalable software solutions. Strong understanding of object-oriented programming (OOP) and efficient problem-solving approaches.</p>
+            </div>
+            
+            <div class="header-buttons" style="margin-top: 30px;">
+                <a href="https://www.linkedin.com/in/erlakhwindersingh" target="_blank" class="btn btn-linkedin contact-btn">
+                    <img src="linkedin.png" alt="LinkedIn" class="contact-icon" onerror="this.style.display='none'">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="javascript:void(0)" onclick="toggleResumeForm()" class="btn btn-outline contact-btn">
+                    <img src="resume-icon.png" alt="Resume" class="contact-icon" onerror="this.style.display='none'">
+                    <span>Download Resume</span>
+                </a>
+                <a href="https://www.udemy.com/certificate/UC-c62352ee-cc18-403d-afee-cb284198dff4/" target="_blank" class="btn btn-outline">
+                    🏆 Python Certificate
+                </a>
+                <div id="resume-dropdown" class="contact-dropdown-menu">
+                    <div class="contact-form">
+                        <h4>Get Resume via Email</h4>
+                        <input type="email" id="visitor-email" placeholder="Enter your Email" required>
+                        <button class="submit-btn" onclick="sendResume()">Submit & Download</button>
+                        <button class="back-btn" onclick="closeResumeForm()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hex-wrapper">
+                <div class="hex-glow"></div>
+                <div class="hex-border"></div>
+                <img src="lakhwindersingh.jpeg" alt="Lakhwinder Singh" class="hex-img" onerror="this.src='https://via.placeholder.com/400x450/1a1d24/00f6ff?text=LS'">
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2 class="section-title">Professional <span>Experience</span></h2>
+        <div class="timeline-container glass-card">
+            <div class="timeline-item">
+                <div class="company-logo">To<br>XSL</div>
+                <div class="exp-details">
+                    <h3>ToXSL Technologies - Mobile App Development Company</h3>
+                    <h4>Android & Flutter - Developer - Full-time · 2 yrs 1 months · Mohali, India (On-site)</h4>
+                    <span class="meta">May 2024 - May 2026 · Present · Mohali, India (On-site)</span>
+                    <div class="inner-role">
+                        <h5>Team Lead – Android Mobile Application & Flutter Developer</h5>
+                        <span>May 2026 - Present · Mohali, India (On-site)</span>
+                        <p>Leading Flutter-based mobile application development and building clean, scalable workflow structures.</p>
+                    </div>
+                    <div class="inner-role">
+                        <h5>Team Lead – Android Mobile Application</h5>
+                        <span>Nov 2024 - Present · 1 yr 7 months · Mohali, India (On-site)</span>
+                        <p>Managed SQL databases, advanced Java implementations, and customized native hardware integrations.</p>
+                    </div>
+                    <div class="inner-role">
+                        <h5>Senior Android Mobile Application Developer</h5>
+                        <span>May 2024 - Jan 2025 · 9 months · Mohali, India (On-site)</span>
+                        <p>Specialized in responsive XML layouts, complex server communication through APIs, and state management.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="company-logo">SM</div>
+                <div class="exp-details">
+                    <h3>SourceMash Technologies - IT Company In India</h3>
+                    <h4>Android Developer · Full-time</h4>
+                    <span class="meta">Jun 2022 - Feb 2024 · 1 yr 9 months · Mohali, India (On-site)</span>
+                    <p>Focused on extensive XML design, seamless API communication, and deploying solid mobile architectures.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="company-logo">CS</div>
+                <div class="exp-details">
+                    <h3>CS Soft Solutions (India) Pvt Ltd</h3>
+                    <h4>Android Developer · Android Developer Internship</h4>
+                    <span class="meta">Jan 2020 - Jun 2020 · 6 months · Mohali, India (On-site)</span>
+                    <p>Core Android framework development, implementing basic object-oriented programming concepts, and mastering SDK utilization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Kotlin & Coroutines</div>
+            <div class="skill-tag">Jetpack Compose</div>
+            <div class="skill-tag">Java (Core & Advanced)</div>
+            <div class="skill-tag">Flutter</div>
+            <div class="skill-tag">Python (OOPs)</div>
+            <div class="skill-tag">C / C++</div>
+            <div class="skill-tag">MVVM & MVC Architecture</div>
+            <div class="skill-tag">Android SDK & Framework</div>
+            <div class="skill-tag">KMP Multiplatform</div>
+            <div class="skill-tag">Payment Gateways</div>
+            <div class="skill-tag">Google Firebase</div>
+            <div class="skill-tag">Firebase DataBase</div>
+            <div class="skill-tag">SQL & Databases</div>
+            <div class="skill-tag">ROOM & Databases</div>
+            <div class="skill-tag">RESTful APIs</div>
+            <div class="skill-tag">Retrofit APIs</div>
+            <div class="skill-tag">Volley Library</div>
+            <div class="skill-tag">Android Dependency Injection</div>
+            <div class="skill-tag">Websocket Api</div>
+            <div class="skill-tag">MSG91</div>
+            <div class="skill-tag">Branch io SDK</div>
+            <div class="skill-tag">Html CSS</div>
+            <div class="skill-tag">DPM (Device Policy Manager)</div>
+            <div class="skill-tag">Git & GitHub</div>
+        </div>
+    </section>
+
+    <section id="live-projects">
+        <h2 class="section-title live-section-title">Currently <span>Live Apps</span></h2>
+        
+        <div class="live-projects-container">
+            
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>ZenCabs</h3>
+                    <p>ZenCabs is a reliable cab booking app in Jammu and Kashmir, offering clean, electric, and affordable taxi services for daily rides, airport transfers, and Katra trips. Whether you need a quick city ride or a dependable taxi service in Jammu, ZenCabs ensures a smooth, safe, and comfortable journey every time.ZenCabs provides a modern alternative to traditional taxi services in Jammu with no surge pricing, transparent fares, and professional drivers. Book your cab instantly and travel stress-free across the city..</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.zencabs.passanger&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>ZenCrew</h3>
+                    <p>ZenCrew is the official driver and partner application for ZenCrew, designed specifically for professional taxi and cab drivers who value transparent earnings, reliable trip opportunities, and a structured working environment.Built to support modern taxi operations, ZenCrew empowers drivers with the tools needed to manage trips efficiently, monitor earnings clearly, and deliver clean, safe, and dependable travel experiences to passengers. The app focuses on professionalism, consistency, and long-term growth for drivers and fleet partners..</p>
+                   <a href="https://play.google.com/store/apps/details?id=com.zencabs.driver&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>TOGET</h3>
+                    <p>TOGET is a mobile application designed for drivers involved in supervised transport services.The application allows drivers to access their assigned routes, destinations, and transport schedules, helping to streamline the daily organization of their missions.Drivers can view detailed route information and follow planned itineraries, contributing to a structured and well-coordinated transport..</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.transport_swiss&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>Larson-Juhl</h3>
+                    <p>Larson-Juhl’s Mobile App makes it easier than ever for customers to check inventory, place orders and track order status, explore product images and specifications, and more! Available for free, exclusively for Larson-Juhl Customers...</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.larsonjuhl&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>Smart-Parking</h3>
+                    <p>The Smart Parking Application is designed to revolutionize the parking experience for both customers and operators by offering a seamless, efficient, and convenient parking management system. The app helps users quickly find available parking spots in real-time, providing information on location, pricing, and availability. With features like online reservations, digital payment options, and smart notifications, the app eliminates the hassle of searching for parking, reducing congestion, and saving time for drivers..</p>
+                    <a href="https://play.google.com/store/apps/details?id=city.mohali.smartparking&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>MicSeBolo</h3>
+                    <p>MicSeBolo is your personal wireless microphone app that instantly streams your voice from your phone’s microphone to any connected Bluetooth or wireless speaker in real-time. Whether you're giving a speech, leading a fitness class, hosting a party, or need a quick and easy public address system, MicSeBolo turns your smartphone into a powerful, portable mic solution..</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.lscreatives.bluetoothmicsebolospeaker&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>SITC الدولية</h3>
+                    <p>Travel smarter with SITC — the next-generation travel platform powered by AI. SITC goes beyond traditional travel apps by combining intelligent booking, personalized planning, and multi-channel access—including in-app, WhatsApp, and email booking—so you can travel the way that suits you best. Whether you're planning a business trip or a holiday, SITC simplifies every step—from discovery to booking and in-trip support...</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.travelswitch.sitc&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+            <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>jiPBX - SIP VOIP Softphone</h3>
+                    <p>jiPBX - SIP VOIP Softphone is a free SIP client that efficiently works to streamline digital telephony for Android that uses Wi-Fi or 4G/LTE connection. It offers the best way to make calls, and the VoIP system ranges from small businesses to large-scale enterprise solutions. Connect your phone system with business platforms, apps, and more on a single and centralized platform and get more value for the business. jiPBX offers a single platform that connects everyone in your organization!...</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.jipbx&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+             <div class="live-card">
+                <div class="live-badge"><span class="pulse-dot"></span> LIVE</div>
+                <div class="live-content">
+                    <h3>XS-App</h3>
+                    <p>XS-App is a cutting-edge attendance management solution that is designed to streamline employee attendance tracking and reporting processes for businesses of all sizes. This is a user-friendly platform that simplifies the entire attendance management process, from clocking in/out to generating detailed reports. Administrators can tailor the app to suit their organization's specific needs by creating unique rules for different days of the week or hours of the day. This flexibility ensures that employees are held accountable for their attendance in a way that works best for their work environment. Employees can view their attendance history, submit leave requests, and access other HR-related functions with ease...</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.jiwebtech.xs.app&hl=en" target="_blank" class="live-btn">View Application</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>DPM & Device Locking Apps</h3>
+                <p>Created specialized Android applications utilizing Device Policy Management (DPM) for restricted device control and strict security policies.</p>
+                <div class="tech-stack">Android, Jetpack Compose, kotlin, Java, DPM</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Hardware Connectivity Apps</h3>
+                <p>Built highly specialized applications bridging direct hardware logic and external sensors with Android system protocols.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose,, Flutter, C++, Sensors</div>
+            </div>
+
+            <div class="project-card">
+                <h3>Smart Home & Speaker Connect</h3>
+                <p>Engineered IoT connectivity applications to control smart home devices and seamlessly sync mobile audio with external Bluetooth speakers.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose,, Flutter, IoT, Bluetooth</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Cab Booking App</h3>
+                <p>Developed dynamic features for seamless ride-booking, real-time map navigation, and efficient driver-to-user communication.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose,, Flutter, APIs, Maps</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Child Tracking App</h3>
+                <p>Engineered an end-to-end child tracking solution featuring real-time location sharing and accurate geofencing security alerts.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose,, Kotlin, GPS</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>E-commerce Application</h3>
+                <p>Designed a high-performance e-commerce platform with clean UI separation, secure payment gateways, and intuitive user workflows.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose, Flutter, Firebase, APIs</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Restaurant & Food Order Apps</h3>
+                <p>Developed robust food delivery applications with a seamless operational flow, dynamic cart management, and real-time order tracking.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose, Flutter, Custom Class UI</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Video Calling & Dating Apps</h3>
+                <p>Built scalable backend architectures for real-time video communication and secure, fast matchmaking user profiles.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose, WebRTC, APIs</div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Smart Parking App</h3>
+                <p>Engineered an end-to-end parking solution. Managed UI state efficiently using optimized custom classes over default ViewModels.</p>
+                <div class="tech-stack">Android-Java-kotlin, Jetpack Compose, Flutter, Custom UI</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Education & <span>Background</span></h2>
+        <div class="timeline-container glass-card">
+            
+            <div class="timeline-item">
+                <div class="company-logo" style="font-size: 1.1em;">CU</div>
+                <div class="exp-details">
+                    <h3>Chandigarh University</h3>
+                    <h4>BCA (Bachelor of Computer Applications)</h4>
+                    <p style="font-size: 0.95em; color: #cbd5e1; margin-top: 8px;">Pursuing Bachelor of Computer Applications (BCA) with a focus on software development, programming, database management, web technologies, and computer science fundamentals, while enhancing technical, analytical, and problem-solving skills.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="company-logo" style="font-size: 1.1em;">PTU</div>
+                <div class="exp-details">
+                    <h3>Punjab Technical University</h3>
+                    <h4>Diploma in Electrical Engineering</h4>
+                    <p style="font-size: 0.95em; color: #cbd5e1; margin-top: 8px;">Completed a Diploma in Electrical Engineering with knowledge and practical exposure in electrical systems, circuit design, power distribution, troubleshooting, and industrial applications, developing strong technical and problem-solving skills.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="company-logo" style="font-size: 0.9em;">PSS<br>71</div>
+                <div class="exp-details">
+                    <h3>Schooling (10th, 11th & 12th)</h3>
+                    <h4>Education</h4>
+                    <p style="font-size: 0.95em; color: #cbd5e1; margin-top: 8px;">Completed schooling from Paragon Senior Secondary School 71 (Mohali) under the Punjab School Education Board with a strong academic background, disciplined learning approach, and active involvement in extracurricular activities, contributing to overall growth and skill development.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
